@@ -1,14 +1,16 @@
 
-
+#Creating Node.
 class Node:
     def __init__(self,info,next=None):
         self.data = info
         self.next = next
 
+#Creating clas SinglyLinkList
 class SinglyLinklist:
     def __init__(self,head=None):
         self.head = head
 
+    # Insertion at the end of the linklist
     def insertAtEnd(self,value):
         temp = Node(value)  
         if(self.head != None):
@@ -18,12 +20,13 @@ class SinglyLinklist:
             t1.next = temp        
         else :
             self.head = temp
-
+    # Insertion at the begining of the linklist
     def insertAtBeg(self,value):
         temp = Node(value)
         temp.next = self.head
         self.head = temp
 
+    # Insertion at the Middle of the LinkList
     def insertAtMiddle(self,value,x):
         temp = Node(value)
         t1 = self.head
@@ -34,6 +37,7 @@ class SinglyLinklist:
                 t1.next = temp
             t1 = t1.next 
 
+    # Deletion of the elements from the linklist
     def deleteLL(self,value):
         t1 = self.head
         prev = t1
@@ -49,6 +53,7 @@ class SinglyLinklist:
         if(t1.data == value):
             prev.next = None        
 
+    # Function used to print the link list
     def printLL(self):
         t1 = self.head
         while (t1.next != None):
