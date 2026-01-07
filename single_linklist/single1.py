@@ -11,7 +11,7 @@ class SinglyLinklist:
         self.head = head
 
     # Insertion at the end of the linklist
-    
+
     def insertAtEnd(self,value):
         temp = Node(value)  
         if(self.head != None):
@@ -74,6 +74,7 @@ obj.insertAtEnd(20)
 obj.insertAtEnd(30)
 
 obj.insertAtBeg(5)
+
 
 obj.insertAtMiddle(60,20)
 
