@@ -4,10 +4,12 @@ class Node:
         self.next = None
         self.prev = None
 
+#Doubly LinkList
 class DoublyLL:
     def __init__(self):
         self.head = None
 
+# insertion at the end of double linklist
     def insert_at_end(self,value):
         temp = Node(value)
         if (self.head == None):
@@ -20,6 +22,7 @@ class DoublyLL:
         t.next = temp
         temp.prev = t
 
+# insertion at the begining of double linklist
     def insert_at_beg(self ,value):
         temp = Node(value)
         if(self.head ==None):
@@ -29,6 +32,7 @@ class DoublyLL:
         self.head.prev = temp
         self.head = temp
 
+#insertion at the middle of double linklist
     def insert_at_middle(self,value,x):
         t = self.head
         while(t.next != None):
@@ -49,6 +53,7 @@ class DoublyLL:
             t1 = t1.next
         print(t1.data)
 
+# deletion in doublly linklist
     def deletionDll(self,value):
         if (self.head == None):
             print("Linked List is empty")
