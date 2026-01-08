@@ -8,7 +8,6 @@ class DoublyLL:
     def __init__(self):
         self.head = None
 
-
     def insert_at_end(self,value):
         temp = Node(value)
         if (self.head == None):
@@ -18,10 +17,8 @@ class DoublyLL:
         t = self.head
         while(t.next != None):
             t = t.next
-        
         t.next = temp
         temp.prev = t
-
 
     def insert_at_beg(self ,value):
         temp = Node(value)
@@ -34,7 +31,6 @@ class DoublyLL:
 
     def insert_at_middle(self,value,x):
         t = self.head
-
         while(t.next != None):
             if(t.data == x):
                 break
