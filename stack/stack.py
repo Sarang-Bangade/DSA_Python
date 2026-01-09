@@ -26,12 +26,14 @@ class stack:
 
 stk = stack()        
 
+
 stk.push(10)
 stk.push(20)
 stk.push(30)
 stk.push(40)
 
 # print(stk.peek())
+
 
 print(stk.pop())
 print(stk.pop())
