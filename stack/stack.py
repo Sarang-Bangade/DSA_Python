@@ -1,6 +1,5 @@
 # Stack
 
-
 class stack:
     def __init__(self):
         self.s =[]
