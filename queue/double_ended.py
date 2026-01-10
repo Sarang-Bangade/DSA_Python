@@ -30,4 +30,5 @@ dq.insert_at_End(30)
 dq.insert_at_End(40)
 dq.insert_at_front(50)
 
+
 print(dq.delete_at_end())
