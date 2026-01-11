@@ -1,6 +1,4 @@
-
 # Queue Data Structure and operations on it
-
 class Queue:
     def __init__(self):
         self.items =[]
