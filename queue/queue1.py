@@ -27,6 +27,4 @@ print(q.delete())
 print(q.delete())
 print(q.delete())
 
-
-
 q.delete()
